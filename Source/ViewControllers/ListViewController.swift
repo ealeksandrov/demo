@@ -35,7 +35,7 @@ class ListViewController: UITableViewController {
     // MARK: - UITableView delegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected row \(indexPath.row)")
+        Router.shared.showDetailsVC(for: indexPath.row)
     }
 
 }
