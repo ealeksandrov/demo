@@ -25,6 +25,10 @@ enum StyleKit {
     static func configureAppearance() {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: StyleKit.Colors.darkText]
         UINavigationBar.appearance().tintColor = StyleKit.Colors.darkText
+
+        let backImage = UIImage(named: "back")
+        UINavigationBar.appearance().backIndicatorImage = backImage
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = backImage
     }
 
 }

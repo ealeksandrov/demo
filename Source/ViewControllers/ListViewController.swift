@@ -16,6 +16,7 @@ class ListViewController: UITableViewController {
         title = "Races"
 
         navigationItem.rightBarButtonItem = StyleKit.BarButtons.searchButton
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
     // MARK: - UITableView data source
