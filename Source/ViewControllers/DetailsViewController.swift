@@ -16,7 +16,15 @@ class DetailsViewController: UIViewController {
             setLocation()
         }
     }
+    @IBOutlet weak var mapHeight: NSLayoutConstraint!
     @IBOutlet weak var personHeader: PersonHeaderView!
+    @IBOutlet weak var personStats: PersonStatsView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.rowHeight = UITableViewAutomaticDimension
+        }
+    }
+    @IBOutlet weak var tableHeight: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +32,11 @@ class DetailsViewController: UIViewController {
         title = "Title"
 
         navigationItem.rightBarButtonItem = StyleKit.BarButtons.searchButton
+    }
+
+    override func viewWillLayoutSubviews() {
+        super.updateViewConstraints()
+        tableHeight?.constant = tableView.contentSize.height
     }
 
 }
@@ -72,5 +85,36 @@ extension DetailsViewController: MKMapViewDelegate {
             view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
         }
         return view
+    }
+}
+
+
+extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PersonFeedCell", for: indexPath) as! PersonFeedCell
+        cell.config(for: indexPath.row)
+
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        self.viewWillLayoutSubviews()
+    }
+}
+
+
+extension DetailsViewController: UIScrollViewDelegate {
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y > 0 {
+            mapHeight.constant = 130
+        } else {
+            mapHeight.constant = 130 - scrollView.contentOffset.y
+        }
     }
 }
