@@ -172,7 +172,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4g-mj-LeI" userLabel="Line">
-                                <rect key="frame" x="25" y="0.0" width="1" height="667"/>
+                                <rect key="frame" x="25" y="20" width="1" height="647"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="ZB9-TL-Fsl"/>
@@ -184,8 +184,8 @@
                                     <constraint firstAttribute="height" constant="130" id="Uow-ge-ft4"/>
                                 </constraints>
                             </mapView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tfr-Sk-GiK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="130" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfr-Sk-GiK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonFeedCell" rowHeight="138" id="Oz3-ts-4WK" customClass="PersonFeedCell" customModule="Demo" customModuleProvider="target">
@@ -272,7 +272,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GgH-bE-hXX" firstAttribute="top" secondItem="BF3-Bt-P1k" secondAttribute="top" id="AAM-Gu-WnY"/>
-                            <constraint firstItem="tfr-Sk-GiK" firstAttribute="top" secondItem="BF3-Bt-P1k" secondAttribute="top" constant="-20" id="GVo-fE-NLC"/>
+                            <constraint firstItem="z4g-mj-LeI" firstAttribute="top" secondItem="BF3-Bt-P1k" secondAttribute="top" id="D61-gu-PFi"/>
+                            <constraint firstItem="tfr-Sk-GiK" firstAttribute="top" secondItem="BF3-Bt-P1k" secondAttribute="top" id="GVo-fE-NLC"/>
                             <constraint firstItem="z4g-mj-LeI" firstAttribute="leading" secondItem="GGA-fO-36A" secondAttribute="leading" constant="25" id="IRf-Re-jK1"/>
                             <constraint firstItem="tfr-Sk-GiK" firstAttribute="bottom" secondItem="BF3-Bt-P1k" secondAttribute="bottom" id="M8R-Kd-HKW"/>
                             <constraint firstItem="tfr-Sk-GiK" firstAttribute="leading" secondItem="BF3-Bt-P1k" secondAttribute="leading" id="U9p-Kf-KLK"/>
@@ -280,7 +281,6 @@
                             <constraint firstItem="GgH-bE-hXX" firstAttribute="leading" secondItem="BF3-Bt-P1k" secondAttribute="leading" id="kWp-qi-nNR"/>
                             <constraint firstItem="tfr-Sk-GiK" firstAttribute="trailing" secondItem="BF3-Bt-P1k" secondAttribute="trailing" id="oeY-1h-NlC"/>
                             <constraint firstItem="GgH-bE-hXX" firstAttribute="trailing" secondItem="BF3-Bt-P1k" secondAttribute="trailing" id="ogh-Sa-Hgo"/>
-                            <constraint firstItem="z4g-mj-LeI" firstAttribute="height" secondItem="GGA-fO-36A" secondAttribute="height" id="sfb-iK-dCX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BF3-Bt-P1k"/>
                     </view>

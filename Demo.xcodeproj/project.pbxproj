@@ -20,6 +20,7 @@
 		5560AD0C20F395E6006FADFA /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560AD0B20F395E6006FADFA /* StyleKit.swift */; };
 		5560AD0E20F3BB06006FADFA /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560AD0D20F3BB06006FADFA /* UIImage+Utils.swift */; };
 		5560AD1020F3C11F006FADFA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560AD0F20F3C11F006FADFA /* DetailsViewController.swift */; };
+		5562C31D20F4C0EF006C882E /* PersonFeedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562C31C20F4C0EF006C882E /* PersonFeedEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		5560AD0B20F395E6006FADFA /* StyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
 		5560AD0D20F3BB06006FADFA /* UIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
 		5560AD0F20F3C11F006FADFA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		5562C31C20F4C0EF006C882E /* PersonFeedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFeedEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		554D7F6B20F4C0CF00A53289 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5562C31C20F4C0EF006C882E /* PersonFeedEvent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5560ACE120F37FFA006FADFA = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				5560AD0A20F395D6006FADFA /* Utils */,
+				554D7F6B20F4C0CF00A53289 /* Model */,
 				5560AD0920F384B9006FADFA /* Views */,
 				5560AD0220F3805F006FADFA /* ViewControllers */,
 				5560AD0520F381D3006FADFA /* Router.swift */,
@@ -207,6 +218,7 @@
 				5560AD1020F3C11F006FADFA /* DetailsViewController.swift in Sources */,
 				5560AD0C20F395E6006FADFA /* StyleKit.swift in Sources */,
 				554D7F6820F4914400A53289 /* PersonStatsView.swift in Sources */,
+				5562C31D20F4C0EF006C882E /* PersonFeedEvent.swift in Sources */,
 				554D7F6A20F495CD00A53289 /* PersonFeedCell.swift in Sources */,
 				5560AD0420F380A2006FADFA /* ListViewController.swift in Sources */,
 			);

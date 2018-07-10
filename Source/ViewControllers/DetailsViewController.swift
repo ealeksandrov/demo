@@ -26,6 +26,8 @@ class DetailsViewController: UIViewController {
         }
     }
 
+    var models: [PersonFeedEvent] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +35,14 @@ class DetailsViewController: UIViewController {
 
         navigationItem.rightBarButtonItem = StyleKit.BarButtons.searchButton
         tableView.tableHeaderView = headerView
+        setupData()
+    }
+
+    func setupData() {
+        for idx in 0...10 {
+            models.append(PersonFeedEvent(for: idx))
+        }
+        tableView.reloadData()
     }
 }
 
@@ -87,12 +97,12 @@ extension DetailsViewController: MKMapViewDelegate {
 extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return models.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PersonFeedCell", for: indexPath) as! PersonFeedCell
-        cell.config(for: indexPath.row)
+        cell.config(with: models[indexPath.row])
 
         return cell
     }
