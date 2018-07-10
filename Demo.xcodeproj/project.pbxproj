@@ -15,7 +15,7 @@
 		5560AD0620F381D3006FADFA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560AD0520F381D3006FADFA /* Router.swift */; };
 		5560AD0820F384B5006FADFA /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560AD0720F384B5006FADFA /* RaceCell.swift */; };
 		5560AD0C20F395E6006FADFA /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560AD0B20F395E6006FADFA /* StyleKit.swift */; };
-		5560AD0E20F3BB06006FADFA /* UIImage+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560AD0D20F3BB06006FADFA /* UIImage+Border.swift */; };
+		5560AD0E20F3BB06006FADFA /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560AD0D20F3BB06006FADFA /* UIImage+Utils.swift */; };
 		5560AD1020F3C11F006FADFA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560AD0F20F3C11F006FADFA /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		5560AD0520F381D3006FADFA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5560AD0720F384B5006FADFA /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
 		5560AD0B20F395E6006FADFA /* StyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
-		5560AD0D20F3BB06006FADFA /* UIImage+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Border.swift"; sourceTree = "<group>"; };
+		5560AD0D20F3BB06006FADFA /* UIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
 		5560AD0F20F3C11F006FADFA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				5560AD0B20F395E6006FADFA /* StyleKit.swift */,
-				5560AD0D20F3BB06006FADFA /* UIImage+Border.swift */,
+				5560AD0D20F3BB06006FADFA /* UIImage+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5560AD0820F384B5006FADFA /* RaceCell.swift in Sources */,
-				5560AD0E20F3BB06006FADFA /* UIImage+Border.swift in Sources */,
+				5560AD0E20F3BB06006FADFA /* UIImage+Utils.swift in Sources */,
 				5560ACEE20F37FFA006FADFA /* AppDelegate.swift in Sources */,
 				5560AD0620F381D3006FADFA /* Router.swift in Sources */,
 				5560AD1020F3C11F006FADFA /* DetailsViewController.swift in Sources */,

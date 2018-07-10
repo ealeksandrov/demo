@@ -22,6 +22,17 @@ enum StyleKit {
         }
     }
 
+    enum CustomImages {
+        static var mapPin: UIImage {
+            let original = UIImage(named: "shape")!.scaled(1.5)
+            let topColor = UIColor(red: 25.0/255, green: 110.0/255, blue: 195.0/255, alpha: 1)
+            let bottomColor = UIColor(red: 35.0/255, green: 185.0/255, blue: 110.0/255, alpha: 1)
+            let gradientImage = UIImage(size: original.size, fromColor: topColor, toColor: bottomColor)!
+
+            return gradientImage.masked(maskImage: original)!
+        }
+    }
+
     static func configureAppearance() {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: StyleKit.Colors.darkText]
         UINavigationBar.appearance().tintColor = StyleKit.Colors.darkText
