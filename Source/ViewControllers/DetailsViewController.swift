@@ -17,6 +17,7 @@ class DetailsViewController: UIViewController {
         }
     }
     @IBOutlet weak var mapHeight: NSLayoutConstraint!
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var personHeader: PersonHeaderView!
     @IBOutlet weak var personStats: PersonStatsView!
     @IBOutlet weak var tableView: UITableView! {
@@ -24,7 +25,6 @@ class DetailsViewController: UIViewController {
             tableView.rowHeight = UITableViewAutomaticDimension
         }
     }
-    @IBOutlet weak var tableHeight: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +32,8 @@ class DetailsViewController: UIViewController {
         title = "Title"
 
         navigationItem.rightBarButtonItem = StyleKit.BarButtons.searchButton
+        tableView.tableHeaderView = headerView
     }
-
-    override func viewWillLayoutSubviews() {
-        super.updateViewConstraints()
-        tableHeight?.constant = tableView.contentSize.height
-    }
-
 }
 
 extension DetailsViewController: MKMapViewDelegate {
@@ -101,12 +96,7 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
 
         return cell
     }
-
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        self.viewWillLayoutSubviews()
-    }
 }
-
 
 extension DetailsViewController: UIScrollViewDelegate {
 
