@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		554D7F6620F4900600A53289 /* PersonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554D7F6520F4900600A53289 /* PersonHeaderView.swift */; };
+		554D7F6820F4914400A53289 /* PersonStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554D7F6720F4914400A53289 /* PersonStatsView.swift */; };
 		5560ACEE20F37FFA006FADFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560ACED20F37FFA006FADFA /* AppDelegate.swift */; };
 		5560ACF320F37FFA006FADFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5560ACF120F37FFA006FADFA /* Main.storyboard */; };
 		5560ACF520F37FFB006FADFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5560ACF420F37FFB006FADFA /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		554D7F6520F4900600A53289 /* PersonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeaderView.swift; sourceTree = "<group>"; };
+		554D7F6720F4914400A53289 /* PersonStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatsView.swift; sourceTree = "<group>"; };
 		5560ACEA20F37FFA006FADFA /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5560ACED20F37FFA006FADFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5560ACF220F37FFA006FADFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				5560AD0720F384B5006FADFA /* RaceCell.swift */,
 				554D7F6520F4900600A53289 /* PersonHeaderView.swift */,
+				554D7F6720F4914400A53289 /* PersonStatsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				554D7F6620F4900600A53289 /* PersonHeaderView.swift in Sources */,
 				5560AD1020F3C11F006FADFA /* DetailsViewController.swift in Sources */,
 				5560AD0C20F395E6006FADFA /* StyleKit.swift in Sources */,
+				554D7F6820F4914400A53289 /* PersonStatsView.swift in Sources */,
 				5560AD0420F380A2006FADFA /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
