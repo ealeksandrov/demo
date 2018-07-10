@@ -16,6 +16,7 @@ class DetailsViewController: UIViewController {
             setLocation()
         }
     }
+    @IBOutlet weak var personHeader: PersonHeaderView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
